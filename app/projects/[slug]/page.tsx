@@ -58,7 +58,7 @@ export default function ProjectDetail() {
           {project.gallery.map((img, idx) => (
             <div 
               key={idx} 
-              className="relative aspect-video cursor-zoom-in overflow-hidden bg-zinc-100"
+              className="relative aspect-video cursor-zoom-in overflow-hidden"
               onClick={() => setSelectedImg(img)}
             >
               <Image 
