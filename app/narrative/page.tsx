@@ -7,19 +7,20 @@ export default function NarrativePage() {
   const narrativeProjects = projects.filter(p => p.category === 'narrative');
 
   return (
-    <main className="min-h-screen bg-background">
-      <div className="max-w-7xl mx-auto px-8 pt-20 pb-32">
-        <header className="mb-20 font-mono">
-          <span className="text-[10px] opacity-40 uppercase tracking-[0.5em]">Category</span>
-          <h1 className="text-4xl uppercase tracking-widest mt-2">Narrative</h1>
-        </header>
+    <main className="px-8">
+       <header className="flex items-bottom gap-4 w-full">
+        {/* Conteúdo do Header */}
+        <div className="flex flex-col">
+          <span className="text-[10px] opacity-40 uppercase tracking-widest">Category</span>
+          <h1 className="text-l lowercase mt-1">Narrative</h1>
+        </div>
+      </header>
 
         <section>
           {narrativeProjects.map(project => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </section>
-      </div>
     </main>
   );
 }

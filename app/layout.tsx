@@ -1,14 +1,7 @@
 import type { Metadata } from "next";
-import { Chivo_Mono } from 'next/font/google';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import "./globals.css";
-
-// const chivoMono = Chivo_Mono({
-//   subsets: ['latin'],
-//   display: 'swap',
-//   variable: '--font-chivo-mono', // Criamos uma variável CSS
-// })
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -33,7 +26,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="pt">
       <body className="antialiased bg-background">
         <Navbar />
-        {children}
+        <div className="mx-auto page-x-padding pt-6 pb-32">
+          {children}
+
+        </div>
+
         <Footer />
       </body>
     </html>

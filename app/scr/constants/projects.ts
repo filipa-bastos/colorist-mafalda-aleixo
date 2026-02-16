@@ -15,19 +15,15 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: '1',
-    title: 'O Caminho do Sol',
-    year: '2023',
+    title: 'Mulheres, Às Armas',
+    year: '2025',
     category: 'narrative',
-    imageUrl: '/images/home/home_hero.jpg',
+    imageUrl: '/images/narrative/MulheresAsArmas/0MulheresAsArmas.jpeg',
     slug: 'o-caminho-do-sol',
     director: 'Tiago Guedes',
     dop: 'João Ribeiro',
     production: 'Leopardo Filmes',
-    gallery: [
-      '/images/home/home_hero.jpg',
-      '/images/home/home_hero.jpg',
-      '/images/home/home_hero.jpg',
-    ]
+    gallery: Array.from({ length: 33 }, (_, i) => `/images/documentary/lobito/${i + 1}Lobito.jpeg`),
   },
   {
     id: '2',
@@ -39,6 +35,18 @@ export const projects: Project[] = [
     director: 'Leopold Belanger',
     dop: 'João Ribeiro',
     production: 'Leopardo Filmes',
+    gallery: Array.from({ length: 33 }, (_, i) => `/images/documentary/lobito/${i + 1}Lobito.jpeg`),
+  },
+  {
+    id: '3',
+    title: 'Rio Infinito',
+    year: '2025',
+    category: 'narrative',
+    imageUrl: '/images/narrative/RioInfinito/0RioInfinito.jpeg',
+    slug: 'rio-infinito',
+    director: 'Gonçalo Pina',
+    dop: 'João Ribeiro',
+    production: 'Bravado Filmes',
     gallery: Array.from({ length: 33 }, (_, i) => `/images/documentary/lobito/${i + 1}Lobito.jpeg`),
   },
 ];
