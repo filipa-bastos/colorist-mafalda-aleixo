@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 :root {
+  /*--background: #0e100f;*/
   --background: #0e100f;
   --foreground: #5ca68b;
 }
@@ -29,4 +30,8 @@ body {
 .page-x-padding{
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.text-background{
+  color: var(--background);
 }
